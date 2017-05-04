@@ -21,7 +21,6 @@ shinyServer(function(input, output) {
   output$slopeOut1 <- renderText({
       Model1[[1]][2]
   })
-  
   output$intOut1 <- renderText({
       Model1[[1]][1]
   })
