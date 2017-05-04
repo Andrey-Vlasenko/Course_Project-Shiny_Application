@@ -5,7 +5,7 @@ In this repository you can see the source code of that application:
 - server.R
 - ui.R
 
-For the associated Slidify presentation, [click here]()
+For the associated Slidify presentation, [click here](http://rpubs.com/Andrey_Vlasenko/ShinyApp-linear_models)
 
 ## Description of the Application
 
