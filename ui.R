@@ -38,11 +38,25 @@ shinyUI(fluidPage(
                            h4("Predicted MPG from Model 2:"),
                            textOutput("pred2") 
                            ),
-                  tabPanel("Difference", br(), 
+                  tabPanel("Difference of Model1 and Model2", br(), 
                            h3("Difference Model1 from Model2:"),
                            h4("Predicted MPG from Model1 - Model2:"),
                            textOutput("pred3"),
                            plotOutput("plot2") 
+                  ),
+                  tabPanel("Documentation (help)", br(), 
+                           h5("This application was developed to compare two linear models 
+                              on the mtcars data set."),
+                           h5("On the sidebarLayout you can set visibiliti of different 
+                              models and set (via slider) the value weight to predict mpg"),
+                           h5("Model1 (lm(mpg~wt)) were built on all data points."),
+                           h5("Model2 (lm(mpg~wt)) were built on data points from the 
+                              selected area. To select data for Model2 you should select 
+                              the area on the plot (on Models tabPanel)."),
+                           h5("On the tabPanel 'Difference of Model1 and Model2' you can see the 
+                              difference in predictions of Model1 and Model2"),
+                           h5("For more details see: 
+                              https://github.com/Andrey-Vlasenko/Course_Project-Shiny_Application/")
                   )
       )
     )
