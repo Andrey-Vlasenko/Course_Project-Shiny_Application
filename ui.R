@@ -19,7 +19,6 @@ shinyUI(fluidPage(
       h3("Predictions of Model 1 and Model 2"),
       sliderInput("sliderWt", "Set the wt of the car", 1, 6, value = 3,step = 0.1)
     ),
-    
     mainPanel(
       tabsetPanel(type = "tabs",
                   tabPanel("Models", br(), 
